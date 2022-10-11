@@ -286,13 +286,13 @@
             }
 
         </script>
-        <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+        <!-- <script src="https://code.jquery.com/jquery-1.11.1.js"></script> -->
         <script>
             const $menuBar = document.getElementById("menubar")
             console.log($menuBar.children[1].textContent)
             const pageName = $menuBar.children[1].textContent;
             console.log(`the page name of ${pageName} is detected`);
-            if(pageName === "Welcome Acme Corporation") {
+            if(pageName === "Welcome Acme Corporation" && pageName === "Welcome Faber College") {
                 console.log(`if ${pageName} inside`);
                 const $relationship = document.getElementById("relationships") 
                 $relationship.children[0].remove() 
